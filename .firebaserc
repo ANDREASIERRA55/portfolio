@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "andreasierra-portfolio"
+  },
+  "targets": {
+    "andreasierra-portfolio": {
+      "hosting": {
+        "porfolio": [
+          "andreasierra-portfolio"
+        ]
+      }
+    }
+  }
+}

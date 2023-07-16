@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## CSS rules to specify families
 
-GOOGLE FONES
+GOOGLE FONTS
 
 ```css
 font-family: 'Courgette', cursive;
