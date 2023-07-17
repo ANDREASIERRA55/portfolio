@@ -1,31 +1,57 @@
+.container{
+height: 100%;
+background-image: url("/assets/img/andrea.png");
+background-size: cover;
+background-position: right;
+background-repeat: no-repeat;
 section {
   display: flex;
   height: 70%;
   align-items: center;
   justify-content: center;
   gap: 5%;
-  figure {
-    width: 25%; //responsive
-    max-width: 150px; //para que no cresca mas de ese tamaño
-    border-radius: 50%;
-    overflow: hidden; //todo lo que se sale de la imagen se esconda.
-    img {
-      width: 100%;
-    }
-  }
+  z-index: 20;
+
   div {
     display: flex;
     flex-direction: column;
-    gap: 2%;
+    gap: 2.5%;
+
     h1 {
       font-size: clamp(24px, 5vw, 76px);
       font-family: "Courgette", cursive;
-      color: azure;
+      color: #accfcf;
     }
     h2 {
       font-size: clamp(18px, 3vw, 56px);
       font-family: "Montserrat", sans-serif;
-      color: azure;
+      color:#accfcf;
     }
   }
 }
+}
+// @media only screen and (max-width: 600px) {
+//   section {
+//     display: flex;
+//     height: 70%;
+//     gap: 3%;
+//   div {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 2.5%;
+
+
+//     h1 {
+//       font-size: clamp(24px, 5vw, 76px);
+//       font-family: "Courgette", cursive;
+//       color: #accfcf;
+//     }
+//     h2 {
+//       font-size: clamp(18px, 3vw, 56px);
+//       font-family: "Montserrat", sans-serif;
+//       color:#accfcf;
+//     }
+//   }
+
+//   }
+  
