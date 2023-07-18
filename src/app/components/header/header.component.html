@@ -1,17 +1,35 @@
 <header>
-    <h1>Andrea Sierra</h1>
-    <nav>
-        <a routerLink=""><p>Home</p></a>
-        <a routerLink="about"><p>About</p></a>
-        <a routerLink="contact"><p>Contact</p></a>
-        <a routerLink="work"><p>Work</p></a>
-    </nav>
-        <span class="material-symbols-outlined hamburguer" (click)="openCloseMenu()">menu</span>
-    <aside *ngIf="menuToglee">
-        <a routerLink=""><p>Home</p></a>
-        <a routerLink="about"><p>About</p></a>
-        <a routerLink="contact"><p>Contact</p></a>
-        <a routerLink="work"><p>Work</p></a>
-    </aside>
-    
+  <h1>Andrea Sierra</h1>
+  <nav>
+    <a routerLink=""><p>Home</p></a>
+    <a routerLink="about"><p>About</p></a>
+    <a routerLink="contact"><p>Contact</p></a>
+    <a routerLink="work"><p>Work</p></a>
+  </nav>
+  <button
+    color="accent"
+    class="hamburguer"
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-menu-item routerLink="about">
+      <mat-icon>person</mat-icon>
+      <span>About me</span>
+    </button>
+    <button mat-menu-item routerLink="contact">
+      <mat-icon>email</mat-icon>
+      <span>Contact me</span>
+    </button>
+    <button mat-menu-item routerLink="work">
+      <mat-icon>computer</mat-icon>
+      <span>My work</span>
+    </button>
+  </mat-menu>
 </header>

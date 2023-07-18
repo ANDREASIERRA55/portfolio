@@ -34,25 +34,13 @@ header {
   header {
     nav {
       display: none;
+      color: #accfcf;
     }
     .hamburguer {
-      display: block;
-      cursor: pointer;
-    }
-    aside {
-      position: absolute;
       display: flex;
-      right: 10px;
-      top: 40px;
-      flex-direction: column;
-      background-color: rgb(86, 84, 84);
-
-      a {
-        display: flex;
-        padding: 15px;
-        text-decoration: none;
-        color: bisque;
-      }
+      cursor: pointer;
+      
     }
+    
   }
 }
