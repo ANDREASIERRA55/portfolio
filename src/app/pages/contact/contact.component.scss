@@ -1,10 +1,12 @@
 .container {
-  padding: 20px;
+  padding: 10vh 10vw;
   display: flex;
   flex-direction: column;
+  gap: 5vh;
   section {
     display: flex;
     flex-direction: column;
+    gap: 3.5vh;
     div {
       display: flex;
       align-items: center;

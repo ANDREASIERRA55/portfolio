@@ -1,35 +1,36 @@
 <header>
-  <h1>Andrea Sierra</h1>
+  <h1>{{ name }}</h1>
   <nav>
-    <a routerLink=""><p>Home</p></a>
-    <a routerLink="about"><p>About</p></a>
-    <a routerLink="contact"><p>Contact</p></a>
-    <a routerLink="work"><p>Work</p></a>
+    <a routerLink=""><p>Inicio</p></a>
+    <a routerLink="about"><p>Descripción</p></a>
+    <a routerLink="contact"><p>Contacto</p></a>
+    <a routerLink="work"><p>Portafolio</p></a>
   </nav>
   <button
     color="accent"
     class="hamburguer"
     mat-icon-button
     [matMenuTriggerFor]="menu"
-    aria-label="Example icon-button with a menu">
+    aria-label="Example icon-button with a menu"
+  >
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
     <button mat-menu-item routerLink="">
       <mat-icon>home</mat-icon>
-      <span>Home</span>
+      <span>Inicio</span>
     </button>
     <button mat-menu-item routerLink="about">
       <mat-icon>person</mat-icon>
-      <span>About me</span>
+      <span>Descripción</span>
     </button>
     <button mat-menu-item routerLink="contact">
       <mat-icon>email</mat-icon>
-      <span>Contact me</span>
+      <span>Contáctame</span>
     </button>
     <button mat-menu-item routerLink="work">
       <mat-icon>computer</mat-icon>
-      <span>My work</span>
+      <span>Portafolio</span>
     </button>
   </mat-menu>
 </header>

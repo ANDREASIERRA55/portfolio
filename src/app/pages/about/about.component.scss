@@ -3,7 +3,27 @@
   display: flex;
   gap: 4%;
   text-align: justify;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+
   figure {
     order: 2;
+    padding-top: 80px;
+  }
+  section {
+    max-width: 900px;
+    div {
+      h1 {
+        color: bisque;
+      }
+      h2 {
+        color: bisque;
+      }
+      ul {
+        li {
+          color: aqua;
+        }
+      }
+    }
   }
 }

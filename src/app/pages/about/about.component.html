@@ -9,41 +9,17 @@
   <section>
     <div>
       <h1>¡Hola a todos!</h1>
-      <p>
-        Soy Andrea, una apasionada Desarrolladora Web Junior con una amplia gama
-        de habilidades y características que me definen como profesional y como
-        persona. En mi camino hacia el desarrollo web, he demostrado ser
-        inteligente y dedicada, siempre dispuesta a aprender y avanzar en mi
-        carrera. Mi entusiasmo y ganas de superarme me impulsan a establecer
-        metas concretas y trabajar arduamente para alcanzarlas.
-      </p>
-      <p>
-        Además, me considero una persona participativa y extrovertida, lo que me
-        permite colaborar efectivamente en equipos de trabajo y establecer
-        conexiones significativas con mis compañeros. Mi habilidad para escuchar
-        activamente y aceptar críticas me ayuda a mejorar continuamente y
-        aportar soluciones más innovadoras.
-      </p>
-      <p>
-        Soy amable, educada y empática, lo que me permite crear un ambiente
-        positivo y armonioso tanto en el trabajo como en la vida diaria. Mi
-        espíritu generoso me impulsa a compartir mis conocimientos y apoyar a
-        otros en su crecimiento profesional. La coordinación y adaptabilidad son
-        habilidades que me permiten enfrentar desafíos con facilidad y
-        mantenerme firme ante los obstáculos. Siempre me esfuerzo por superar
-        cualquier dificultad y mantener mi fuerza y persistencia en cada
-        proyecto.
-      </p>
-
-      <p>
-        Estoy emocionada por seguir creciendo como Desarrolladora Web Junior y
-        continuar trabajando con pasión y compromiso en cada tarea que se
-        presente. Mi objetivo es ofrecer soluciones innovadoras y optimizar la
-        experiencia del usuario en cada proyecto en el que participe. Gracias
-        por visitar mi portfolio y conocer un poco más sobre mí. ¡Espero tener
-        la oportunidad de colaborar con ustedes en futuros proyectos y crear
-        juntos un impacto significativo en el mundo digital!
-      </p>
+      <app-title-text
+        *ngFor="let info of information"
+        [title]="info.title"
+        [paragraphs]="info.paragraphs"
+      ></app-title-text>
+      <h2><i class="fa fa-cogs"></i> Tecnologías y Habilidades</h2>
+      <ul>
+        <li *ngFor="let skill of skills">
+          {{ skill }}
+        </li>
+      </ul>
     </div>
   </section>
 </div>

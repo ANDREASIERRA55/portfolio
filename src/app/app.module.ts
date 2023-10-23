@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
+import { TitleTextComponent } from './components/title-text/title-text.component';
+import { TextIconComponent } from './components/text-icon/text-icon.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {MatMenuModule} from '@angular/material/menu';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    WorkComponent
+    WorkComponent,
+    TitleTextComponent,
+    TextIconComponent
   ],
   imports: [
     BrowserModule,
