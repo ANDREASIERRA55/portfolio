@@ -11,9 +11,9 @@ import { WorkComponent } from './pages/work/work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // material angular//
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 import { TitleTextComponent } from './components/title-text/title-text.component';
 import { TextIconComponent } from './components/text-icon/text-icon.component';
 
@@ -26,7 +26,7 @@ import { TextIconComponent } from './components/text-icon/text-icon.component';
     ContactComponent,
     WorkComponent,
     TitleTextComponent,
-    TextIconComponent
+    TextIconComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +34,9 @@ import { TextIconComponent } from './components/text-icon/text-icon.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

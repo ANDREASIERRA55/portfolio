@@ -15,11 +15,11 @@
         [paragraphs]="info.paragraphs"
       ></app-title-text>
       <h2><i class="fa fa-cogs"></i> Tecnologías y Habilidades</h2>
-      <ul>
-        <li *ngFor="let skill of skills">
-          {{ skill }}
-        </li>
-      </ul>
+      <app-text-icon
+        *ngFor="let skill of skills"
+        [iconSrc]="skill.icon"
+        [iconName]="skill.name"
+      ></app-text-icon>
     </div>
   </section>
 </div>
